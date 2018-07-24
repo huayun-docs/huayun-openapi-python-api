@@ -1,0 +1,4 @@
+SDK_INVALID_REGION_ID = 'SDK.InvalidRegionId'
+SDK_SERVER_UNREACHABLE = 'SDK.ServerUnreachable'
+SDK_INVALID_REQUEST = 'SDK.InvalidRequest'
+SDK_UNKNOWN_SERVER_ERROR = 'SDK.UnknownServerError'
