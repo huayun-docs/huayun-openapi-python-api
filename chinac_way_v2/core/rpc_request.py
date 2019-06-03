@@ -99,6 +99,12 @@ class RpcRequest(CRequest):
             return 'false'
         return value
 
+    def set_old_version(self):
+        self.__request_url = config.HTTP_REQUEST_URL_OLD
+
+    def set_v2_version(self):
+        self.__request_url = config.HTTP_REQUEST_URL
+
     def compose_url(self, signer, credential):
         if self.get_query_params() == None:
             params = {}

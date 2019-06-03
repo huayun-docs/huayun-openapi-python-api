@@ -10,5 +10,7 @@ if __name__ == '__main__':
     client = Client(profile)
     request = DescribeInstances()
     request.set_method('GET')
+    # 调用旧版request.set_old_version()
+    # 调用v2新版request.set_v2_version(),默认是新版
     response = client.get_response(request)
     print(response)
